@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Happy Rose Day ❤️</title>
+
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: radial-gradient(circle at bottom, #0b3d1a, #020b06);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: #ffecec;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+      overflow: hidden;
+    }
+
+    h1 {
+      margin-bottom: 10px;
+      font-size: 36px;
+    }
+
+    p {
+      max-width: 650px;
+      line-height: 1.6;
+      margin-bottom: 25px;
+      opacity: 0;
+      animation: fadeIn 2s ease forwards;
+      animation-delay: 1.2s;
+    }
+
+    .rose-image {
+      width: 260px;
+      opacity: 0;
+      animation:
+        appear 1.8s ease forwards,
+        float 5s ease-in-out infinite;
+      animation-delay: 0.4s;
+    }
+
+    @keyframes appear {
+      to { opacity: 1; }
+    }
+
+    @keyframes float {
+      0%   { transform: translateY(0); }
+      50%  { transform: translateY(-12px); }
+      100% { transform: translateY(0); }
+    }
+
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+
+<body>
+
+<h1>Happy Rose Day ❤️</h1>
+
+<p>
+I'm the Cat btw 🐱🌹
+</p>
+
+<img src="./Cat.jpeg" class="rose-image" alt="A rose for you">
+
+
+</body>
+</html>
